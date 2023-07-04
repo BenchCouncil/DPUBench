@@ -61,5 +61,5 @@ Then you can send packet to the server in whitch your benchmark run, eg. pktgen 
 
 **sudo echo start > /proc/net/pktgen/pgctrl**
 
-The result thoughput will be print on the terminal.
+The result thoughput will be printed on the terminal.
 
