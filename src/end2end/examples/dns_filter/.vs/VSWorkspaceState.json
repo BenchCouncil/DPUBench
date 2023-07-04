@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin",
+    "\\bin\\grpc\\client",
+    "\\src",
+    "\\src\\grpc\\client"
+  ],
+  "SelectedNode": "\\src\\dns_filter_core.c",
+  "PreviewInSolutionExplorer": false
+}

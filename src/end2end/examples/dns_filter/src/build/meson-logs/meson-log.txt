@@ -1,0 +1,46 @@
+Build started at 2023-03-21T20:17:33.065847
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.45.1
+Source dir: /opt/mellanox/doca/examples/dns_filter/src
+Build dir: /opt/mellanox/doca/examples/dns_filter/src/build
+Build type: native build
+Program cat found: YES (/bin/cat)
+Running command: /bin/cat /opt/mellanox/doca/examples/dns_filter/src/VERSION
+--- stdout----
+1.2.006
+
+----stderr----
+
+
+Project name: DOCA_DNS_FILTER
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /opt/mellanox/doca/examples/dns_filter/src/build/meson-private/sanitycheckc.c -o /opt/mellanox/doca/examples/dns_filter/src/build/meson-private/sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /opt/mellanox/doca/examples/dns_filter/src/build/meson-private/sanitycheckc.exe
+Native C compiler: cc (gcc 7.5.0 "cc (Ubuntu 7.5.0-3ubuntu1~16.04) 7.5.0")
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /opt/mellanox/doca/examples/dns_filter/src/build/meson-private/sanitycheckcpp.cc -o /opt/mellanox/doca/examples/dns_filter/src/build/meson-private/sanitycheckcpp.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /opt/mellanox/doca/examples/dns_filter/src/build/meson-private/sanitycheckcpp.exe
+Native C++ compiler: c++ (gcc 7.5.0 "c++ (Ubuntu 7.5.0-3ubuntu1~16.04) 7.5.0")
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Determining dependency 'libdpdk' with pkg-config executable '/usr/bin/pkg-config'
+Dependency libdpdk found: NO
+
+meson.build:36:1: ERROR: Problem encountered: Please set PKG_CONFIG_PATH to DPDK packages path, for further instructions please refer to the DOCA Reference Applications guide

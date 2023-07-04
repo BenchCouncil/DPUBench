@@ -1,0 +1,19 @@
+#
+# Copyright (c) 2021 NVIDIA CORPORATION & AFFILIATES, ALL RIGHTS RESERVED.
+#
+# This software product is a proprietary product of NVIDIA CORPORATION &
+# AFFILIATES (the "Company") and all right, title, and interest in and to the
+# software product, including all associated intellectual property rights, are
+# and shall remain exclusively with the Company.
+#
+# This software product is governed by the End User License Agreement
+# provided with the software product.
+#
+
+This is sample data file for the file scan application,
+The regex is able to find and match string patterns, useful application of the regex might be matching sensitive information such as credit cards, passwords, or even phishing patterns
+
+please click on the link below to download, in order to get your prize please visit the link
+https://aaa.com
+www.aaa.net
+credit card: 2142 0123 0123 0123

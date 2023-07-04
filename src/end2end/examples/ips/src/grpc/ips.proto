@@ -1,0 +1,41 @@
+/*
+ * Copyright (c) 2021 NVIDIA CORPORATION & AFFILIATES, ALL RIGHTS RESERVED.
+ *
+ * This software product is a proprietary product of NVIDIA CORPORATION &
+ * AFFILIATES (the "Company") and all right, title, and interest in and to the
+ * software product, including all associated intellectual property rights, are
+ * and shall remain exclusively with the Company.
+ *
+ * This software product is governed by the End User License Agreement
+ * provided with the software product.
+ *
+ */
+
+syntax = "proto3";
+
+import "common.proto";
+
+/* Host (x86) -> DPU (Arm):
+ * ========================
+ * gRPC server that exposes the application's API to the host
+ * for remote management.
+ */
+service IPS {
+	/* Subscribe for logger to recieve reports on client */
+	rpc Subscribe (SubscribeReq) returns (stream LogRecord);
+
+	/* Quit the App */
+	rpc Quit (QuitReq) returns (QuitResp);
+}
+
+/* Here for future compatibility */
+message SubscribeReq {
+}
+
+/* Here for future compatibility */
+message QuitReq {
+}
+
+/* Here for future compatibility */
+message QuitResp {
+}

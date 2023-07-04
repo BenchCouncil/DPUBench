@@ -1,0 +1,20 @@
+#
+# Copyright (c) 2021 NVIDIA CORPORATION & AFFILIATES, ALL RIGHTS RESERVED.
+#
+# This software product is a proprietary product of NVIDIA CORPORATION &
+# AFFILIATES (the "Company") and all right, title, and interest in and to the
+# software product, including all associated intellectual property rights, are
+# and shall remain exclusively with the Company.
+#
+# This software product is governed by the End User License Agreement
+# provided with the software product.
+#
+
+alert tcp any any -> any any (msg:"Youtube"; flow:to_server; pcre:"/.*youtube.*/"; sid:1; rev:1;)
+drop tcp any any -> any any (msg:"Ebay"; flow:to_server; pcre:"/.*ebay.*/"; sid:2; rev:1;)
+alert tcp any any -> any any (msg:"Alibaba"; flow:to_server; pcre:"/.*alibaba.*/"; sid:3; rev:1;)
+alert tcp any any -> any any (msg:"Twitch"; flow:to_server; pcre:"/.*twitch.*/"; sid:4; rev:1;)
+alert tcp any any -> any any (msg:"Wikipedia"; flow:to_server; pcre:"/.*wikipedia.*/"; sid:5; rev:1;)
+alert tcp any any -> any any (msg:"Google"; flow:to_server; pcre:"/.*google.*/"; sid:6; rev:1;)
+alert tcp any any -> any any (msg:"Facebook"; flow:to_server; pcre:"/.*facebook.*/"; sid:7; rev:1;)
+alert tcp any any -> any any (msg:"Twitter"; flow:to_server; pcre:"/.*twitter.*/"; sid:8; rev:1;)

@@ -1,0 +1,37 @@
+/*
+ * Copyright (c) 2021 NVIDIA CORPORATION & AFFILIATES, ALL RIGHTS RESERVED.
+ *
+ * This software product is a proprietary product of NVIDIA CORPORATION &
+ * AFFILIATES (the "Company") and all right, title, and interest in and to the
+ * software product, including all associated intellectual property rights, are
+ * and shall remain exclusively with the Company.
+ *
+ * This software product is governed by the End User License Agreement
+ * provided with the software product.
+ *
+ */
+{
+	"doca_dpdk_flags":{
+		// -a - Add a device to the allow list.
+		"devices":[
+			{
+				"device": "regex",
+				"id": "03:00.0"
+			},
+		],
+
+		// Additional DPDK (EAL) flags (if needed)
+		"flags": "",
+	},
+	"doca_general_flags":{
+		// -l - sets the log level for the application DEBUG=4, CRITICAL=0
+		"log-level": 4,
+	},
+	"doca_program_flags":{
+		// -r - Path to precompiled rules file (rof2.binary)
+		"rules": "/tmp/regex_rules.rof2.binary",
+
+		// -d - Path to data file
+		"data": "/tmp/data_to_scan.txt",
+	}
+}
