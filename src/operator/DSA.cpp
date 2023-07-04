@@ -218,7 +218,7 @@ int main(int argc, char** argv) {
     double time_taken = double(1000000 * (end.tv_sec - start.tv_sec) + (end.tv_usec - start.tv_usec)) / double(1e6);
 
     printf("spend %fs\n", time_taken);
-    printf("RSA : %lld MB per second\n", (long long)((float)(niters * num_thread * len) / (float)(time_taken * 1024 * 1024)));
+    printf("DSA : %lld MB per second\n", (long long)((float)(niters * num_thread * len) / (float)(time_taken * 1024 * 1024)));
 
     free(thread_inp);
 
